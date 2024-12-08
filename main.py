@@ -8,7 +8,7 @@ app = FastAPI()
 app.add_middleware(
     CORSMiddleware,
     allow_origins=[
-        "https://blue-pebble-0e2752303.4.azurestaticapps.net/",  # Add your frontend URL
+        "https://blue-pebble-0e2752303.4.azurestaticapps.net",  # Add your frontend URL
         "http://localhost:5173",  # Optional: For local testing
     ],    
     allow_credentials=True,
