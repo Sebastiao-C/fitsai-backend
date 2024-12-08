@@ -7,8 +7,10 @@ app = FastAPI()
 # Add CORS Middleware
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173"],  # Frontend URL
-    allow_credentials=True,
+    allow_origins=[
+        "https://fitsai-eaecdcbqhxbhghaf.westeurope-01.azurewebsites.net",  # Add your frontend URL
+        "http://localhost:5173",  # Optional: For local testing
+    ],    allow_credentials=True,
     allow_methods=["*"],  # Allow all HTTP methods
     allow_headers=["*"],  # Allow all headers
 )
